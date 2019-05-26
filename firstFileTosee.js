@@ -18,14 +18,6 @@ const init = async () => {
 			}
 		}
 	});
-
-	server.route({
-		method: 'GET',
-		path: '/picture',
-		handler: {
-			file: 'picture.jpg'
-		}
-	});
 	await server.start();
 	console.log('Server running on %s', server.info.uri);
 };
